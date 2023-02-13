@@ -1,0 +1,48 @@
+* {
+    background-color: aquamarine;
+}
+
+img {
+    border-radius: 40%;
+    
+}
+
+img:hover {
+    border-radius: 0%;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    color: rgb(0, 26, 255);
+}
+
+h2 {
+    font-size: 85px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    color: blueviolet;
+}
+
+ul {
+    font-size: 50px;
+}
+
+footer {
+    font-size: 30px;
+}
+
+a:hover {
+    color:rgb(255, 123, 0);
+}
+
+a:active{
+    color: rgb(255, 0, 0);
+}
+
+li {
+    font-family: fantasy;
+}
+
+footer {
+    font-family: monospace;
+}

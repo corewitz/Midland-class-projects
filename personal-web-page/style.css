@@ -1,0 +1,46 @@
+*{
+    background-color: aquamarine;
+}
+
+
+
+
+.banner {
+    color: red;
+    font-size: 60px;
+    text-align: center;
+}
+
+.hobbies {
+  color: blue;
+}
+
+.work{
+  color: green;
+}
+
+.wife{
+  color: purple;
+}
+
+.pets{
+  color: coral;
+}
+
+.favorite-food{
+  color: crimson;
+}
+
+.italicized {
+    font-style: italic;
+}
+
+.link {
+    display: inline-block;
+    width:calc(19%);
+    font-size: 40px;
+}
+
+.center {
+    text-align: center;
+}
