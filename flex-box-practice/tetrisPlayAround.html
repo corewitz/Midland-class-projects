@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      /* Option 1 */
+      /* .box {
+        min-height: 50px;
+        flex-basis: 10%;
+      }
+
+      .box.border-left.border-right {
+        flex-basis: calc(10% - 2px);
+      }
+      .box.border-left:not(.border-right),
+      .box.border-right:not(.border-left) {
+        flex-basis: calc(10% - 1px);
+      } */
+
+      /* Option 2 */
+      .box {
+        min-height: 100px;
+        flex-basis: 10%;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 10px grey inset; 
+      }
+
+      .cyan {
+        background-color: cyan;
+      }
+
+      .green {
+        background-color: green;
+      }
+
+      .yellow {
+        background-color: yellow;
+      }
+
+      .purple {
+        background-color: purple;
+      }
+
+      .black {
+        background-color: black;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+
+      .orange {
+        background-color: orange;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .border-top {
+        border-top: 3px solid black;
+      }
+
+      .border-bottom {
+        border-bottom: 3px solid black;
+      }
+
+      .border-left {
+        border-left: 3px solid black;
+      }
+
+      .border-right {
+        border-right: 3px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ROW 1 -->
+      <div class="box cyan border-left border-top border-bottom"></div>
+      <div class="box cyan border-top border-bottom"></div>
+      <div class="box cyan border-top border-bottom"></div>
+      <div class="box cyan border-right border-top border-bottom"></div>
+      <div class="box green border-top border-left border-right"></div>
+      <div class="box yellow border-left border-bottom"></div>
+      <div class="box yellow border-bottom border-right"></div>
+      <div class="box purple border-left border-bottom"></div>
+      <div class="box purple border-right"></div>
+      <div class="box black"></div>
+      <!-- Row 2 -->
+      <div class="box blue border-left border-top"></div>
+      <div class="box blue border-right border-top"></div>
+      <div class="box orange border-top border-left border-right"></div>
+      <div class="box black"></div>
+      <div class="box green border-left border-bottom"></div>
+      <div class="box green border-top border-right"></div>
+      <div class="box red border-left border-top border-bottom"></div>
+      <div class="box red border-right border-top"></div>
+      <div class="box purple border-left border-right border-bottom"></div>
+      <div class="box black"></div>
+      <!-- Row 3 -->
+      <div class="box blue border-left border-bottom"></div>
+      <div class="box blue border-right border-bottom"></div>
+      <div class="box orange border-left border-bottom"></div>
+      <div class="box orange border-top border-bottom"></div>
+      <div class="box orange border-right border-top border-bottom"></div>
+      <div class="box green border-left border-right border-bottom"></div>
+      <div class="box black"></div>
+      <div class="box red border-left border-bottom"></div>
+      <div class="box red border-right border-top border-bottom"></div>
+      <div class="box orange border-left border-top"></div>
+    </div>
+  </body>
+</html>

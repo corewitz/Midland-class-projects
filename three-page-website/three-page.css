@@ -1,0 +1,475 @@
+body {
+    min-width: 215px;
+    background-color: rgb(200, 177, 72);
+}
+
+.cover {
+    background-size:cover;
+}
+
+.flex {
+    display:flex;
+}
+
+.fit {
+    height:fit-content;
+}
+
+.center {
+    text-align: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.sofia {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.white {
+    color:white;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.evenly {
+    justify-content: space-evenly;
+}
+
+.no-decor {
+    text-decoration: none;
+}
+
+.margin1 {
+    margin: 1%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+}
+
+/***************************************NAVIGATION**********************************************/
+
+nav {
+    line-height:70px;
+}
+
+nav a {
+    width: calc(100% / 3);
+    background-color: rgb(36, 146, 214);
+    font-size: 1.7rem;
+}
+
+nav a:hover {
+    background-color: blue;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.current {
+    background-color: rgb(12, 12, 179);
+
+}
+
+.current:hover {
+    background-color: rgb(12, 12, 179);
+    font-size: 1.7rem;
+}
+
+/*************************************MAIN SECTION*********************************************/
+
+.main-section {
+    width: 75%;
+    background-color: rgb(31, 31, 99);
+}
+
+
+.main-box {
+  flex-basis: calc(29%);
+  height: 200px;
+  min-width:200px;
+  color: blue;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2%;
+  border-radius: 10%;
+  }
+
+  .main-box p {
+    background-color: rgba(216, 162, 62, 0.993);
+    margin-top: 0;
+    font-size: 1.3rem;
+   
+}
+
+.main-box:hover {
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(125, 6, 6);
+    border-radius: 10%;
+     
+}
+
+.oil{
+  background-image: url("oil.jpeg");
+}
+
+.tires {
+  background-image: url("tires.jpeg");  
+}
+
+.brakes {
+  background-image: url("brakes.jpeg");
+}
+
+.suspension {
+  background-image: url("suspension.jpeg");
+}
+
+.engine {
+  background-image: url("engine.jpeg");
+}
+
+.transmission {
+  background-image: url("transmission.jpeg");
+}
+
+.alignment {
+  background-image: url("alilgnment.jpeg");
+}
+
+.diagnostics {
+  background-image: url("diagnostic.jpeg");
+}
+
+.electrical {
+  background-image: url("electrical.jpeg");
+}
+
+.adas {
+  background-image: url("ADAS.jpeg");
+
+}
+/***********************************RIGHT MENU*************************************************/
+
+.right-menu {
+    flex-direction: column;
+    width:25%;
+    background-color: rgb(143, 110, 26);
+
+}
+
+.menu-box {
+  flex-basis: 18%;
+  color: rgb(41, 41, 207);
+  margin: 2%;
+}
+
+.menu-box p {
+  font-size: 1.9rem;
+  padding-top: 1%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+.menu-box:hover {
+    color: rgb(167, 11, 11);
+    font-style: italic;
+    font-size: 2.2rem;
+}
+.council-bluffs {
+    background-image: url("council-bluffs.jpeg");
+}
+    
+
+.omaha {
+    background-image: url("omaha.jpeg");
+   
+}
+
+.lincoln {
+    background-image: url("lincoln.jpeg");
+   
+}
+
+.fremont {
+    background-image: url("fremont.jpeg");
+    
+}
+
+.glenwood {
+    background-image: url("glenwood.jpeg");
+    
+}
+
+/**********************************FOR SALE PAGE****************************************/
+
+
+/************************************LEFT-MENU*******************************************/
+
+.left-menu {
+    
+ 
+    min-width: 200px;
+    background-color: rgb(159, 159, 211);
+    
+}
+
+.menu-item {
+    background-color: rgb(96, 96, 235);
+    padding: 8%;
+    margin:11%;
+    border-radius: 20%;
+
+    
+}
+
+.menu-item:hover {
+   background-color: blue;
+}
+
+
+/**************************************FOR-SALE-MAIN***************************************/
+
+
+.sale {
+  background-color: rgb(160, 122, 26);
+  flex-basis: 100%;
+}
+
+.sale-item {
+    background-color:rgb(165, 165, 246);
+    width: 45%;
+    min-width: 370px;
+    padding:1%;
+    border-radius: 5%;
+}
+
+.sale-item img {
+    height:90px;
+    float: left;
+    margin: 2%;
+}
+
+.sale-item img:hover {
+    height: 110px;
+}
+
+span {
+    font-style: italic;
+    color: aliceblue;
+}
+
+/****************************************CONTACT PAGE******************************************/
+
+.contact-form {
+   background-color: rgb(109, 109, 209);
+   width: auto;
+   margin-left: 15%;
+   margin-right: 15%;
+   border-radius: 2%;
+}
+
+form {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom:2%;
+}
+
+
+
+
+#name, #phone, #email, #vehicle {
+    width: 90%;
+    margin: 1%;
+    background-color: rgb(204, 204, 232);
+    
+}
+
+#textarea {
+    width: 90%;
+    height: 150px; 
+    margin-top: 2%;
+    margin-bottom: 5%;
+    background-color: rgb(204, 204, 232);
+}
+
+.submit {
+    margin-top: 4%;    
+    margin-bottom:2%;
+    margin-right:10%;
+    padding:2% 4% 2% 4%;
+}
+
+
+
+/************************************FOOTER**********************************************/
+
+
+footer {
+    background-image: url("wrenches.jpeg");
+    background-repeat: repeat;
+    color: rgb(7, 7, 180);
+    font-size: 2.3rem;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin-top: 1%;
+   
+}
+
+
+
+/************************************MEDIA***********************************************/
+@media only screen and (max-width: 1062px) {
+ .sale {
+    padding-top: 1%;
+ }
+ .sale-item {
+    width: 90%;
+ }
+
+ .contact-form {
+    margin: 2%;
+}
+
+}
+
+@media only screen and (max-width: 925px) {
+
+    .main-section {
+        width: 60%;
+       ;
+    }
+    .main-box {
+        flex-basis: 42%;
+        
+    }
+    .right-menu {
+        width: 40%;
+    }
+
+    .menu-box {
+        flex-basis: 17%;
+    }
+    
+}
+
+@media only screen and (max-width: 740px) {
+
+    .main-section {
+        width: 70%;
+        
+    }
+
+
+    .right-menu {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 637px) {
+    
+   main {
+    flex-direction: column;
+   }
+
+   .main-section {
+    width: 100%;
+   }
+
+   .right-menu {
+    width: 100%;
+    align-items: center;
+   }
+
+   .menu-box {
+     width: 90%;
+     flex-basis: 160px;
+     
+   }
+
+   .sale {
+    background-color: rgb(200, 177, 72);
+   }
+   
+}
+
+@media only screen and (max-width: 576px) {
+
+    nav{
+        flex-direction: column;
+        height: 200px;
+        line-height: none;
+    
+    }
+
+    nav a {
+        width: 100%;
+        height: calc(100% / 3);
+       
+    }
+    
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-box {
+        width: 90%;
+        flex-basis: 180px;
+        min-width: 1px;
+    }
+
+    .sale {
+       
+     width: auto;
+        
+    }
+
+    .sale-item {
+        min-width: 97%;
+
+    }
+
+    .radio-form {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        margin-left:20%;
+    }
+
+    .radio-button {
+        margin-top: 3%;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 390px) {
+    
+    .sale-main {
+        flex-direction: column;
+    }
+
+    .left-menu {
+       text-align: center;
+       }
+
+    .radio-form {
+        margin-left: 1%;
+    }   
+
+}
+
+
+ 
+    
+
