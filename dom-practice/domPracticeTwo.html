@@ -14,6 +14,64 @@
       //!   - Div 3 - Orange Border, white with red text that says: "Div 3" 150px by 100px
       //!   - Div 4 - Fixed to the top, any color not taken for background and taking up the
       //!     full width of the page.
+
+      /*document.addEventListener('DOMContentLoaded', function() {
+        test();
+      }); */
+      
+      function test() {
+        const newDiv = document.createElement('div');
+        newDiv.style.backgroundColor = "red";
+        newDiv.textContent = "Div 1";
+        //newDiv.position = "fixed";
+        newDiv.style.border= "2px solid black";
+        newDiv.style.width = "200px";
+        newDiv.style.height = "200px";
+        document.body.appendChild(newDiv);
+
+        const newDiv2 = document.createElement('div');
+        newDiv2.style.backgroundColor = "blue";
+        newDiv2.textContent = "Div 2";
+        newDiv2.style.textAlign = "center";
+        //newDiv2.position = "fixed";
+        newDiv2.style.border= "2px solid black";
+        newDiv2.style.borderRadius = "50px"
+        newDiv2.style.width = "100px";
+        newDiv2.style.height = "100px";
+        document.body.appendChild(newDiv2);
+
+        const newDiv3 = document.createElement('div');
+        newDiv3.style.backgroundColor = "white";
+        newDiv3.style.color = "red";
+        newDiv3.textContent = "Div 3";
+        //newDiv3.position = "fixed";
+        newDiv3.style.border= "2px solid orange";
+        newDiv3.style.width = "200px";
+        newDiv3.style.height = "150px";
+        document.body.appendChild(newDiv3);
+
+        const newDiv4 = document.createElement('div');
+        newDiv4.style.backgroundColor = "yellow";
+        newDiv4.textContent = "Div 4";
+        //newDiv4.position = "fixed";
+        newDiv4.style.border= "2px solid black";
+        newDiv4.style.width = "100%";
+        newDiv4.parentNode.insertBefore(newDiv4, document.body.firstChild);
+        document.body.appendChild(newDiv4); 
+
+        //unsure why div 4 dissapears
+
+      };
+
+
+      //document.addEventListener("DOMContentLoaded", test);
+
+      document.addEventListener("DOMContentLoaded", function() {
+        test();
+      });
+
+
+
     </script>
   </body>
 </html>
