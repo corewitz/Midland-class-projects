@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="movie.css">
+    <title>MOVIES</title>
+</head>
+<body>
+    <header>
+        <h1 id="appTitle">MOVIES</h1>
+      </header>
+      <form id="movieForm">
+        <label>Search for a movie!</label>
+        <input id="userInput" type = "text" placeholder="Search for a movie">
+        <br>
+        <label for="type">Search by Type</label>
+        <select name="type" id="searchType">
+            <option value="movie" selected>Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+        </select>
+        <br>
+        <label>Search by year!</label>
+        <input id="searchYear" type = "text" placeholder="Search by year">
+        <button type = "submit" id="go">GO!</button>
+      </form>
+      <div id ="errorMessage"></div>
+      <div id="movieInfo">
+        <div id="moviePoster"><img id ="poster"></div>
+        <div id="movieText">
+          <div id="mTitle"></div>
+          <div id="year"></div>
+          <div id="genre"></div>
+          <div id="director"></div>
+          <div id="actors"></div>
+        </div>
+
+      </div>
+      <script src = "movie.js"></script>
+</body>
+</html>

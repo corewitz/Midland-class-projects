@@ -1,0 +1,72 @@
+body {
+    background-color: #283db3;
+    color: #ededed;
+}
+
+#appTitle {
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 80px;
+    padding: 5%;
+}
+
+#movieForm, #go {
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    font-family: 'Fredoka One', sans-serif;
+
+}
+
+#movieInfo {
+    width:  65%;
+    margin:  32px auto;
+    padding: 5%;
+   
+}
+
+#mTitle {
+    font-size: 4rem;
+    padding: 5%;
+}
+
+
+#moviePoster, #movieText {
+    width:  50%;
+    float:  left;
+}
+
+
+
+#movieText {
+    font-family: 'Questrial';
+    line-height: 1.25;
+}
+
+
+
+#go {
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #B97828;
+    color: #fdc238;
+    cursor:  pointer;
+}
+
+label {
+    padding: 2%;
+  
+}
+
+#errorMessage {
+    text-align: center;
+    font-size: 7rem;
+    color: red;
+}
+
+
