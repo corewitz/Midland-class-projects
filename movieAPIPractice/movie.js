@@ -33,10 +33,9 @@ document.getElementById("go").addEventListener("click", (e) => {
       .then((data) => {
         console.log(data);
         if(data.Response == "False") {
-          document.querySelector("#errorMessage").innerText = "SHIT MAN";
+          document.querySelector("#errorMessage").innerText = "WE CANT FIND ANYTHING LIKE THAT";
           clearData();
-
-        } else {
+          } else {
         document.querySelector("#mTitle").innerText = data.Title;
         const poster = document.querySelector("#poster");
         poster.setAttribute('src', data.Poster);
@@ -44,10 +43,9 @@ document.getElementById("go").addEventListener("click", (e) => {
         document.querySelector("#genre").innerText = data.Genre;
         document.querySelector("#director").innerText = data.Director;
         document.querySelector("#actors").innerText = data.Actors;
+             }
+          }); 
         }
-
-        }); 
-       }
       }); 
 
 
