@@ -21,42 +21,56 @@ let turnCount = 0;
          let dim = setTimeout(() => {
             e.target.style.opacity = ".3";
           }, 1000); 
-         playerArray.push(e.target)  
+         playerArray.push(e.target.id)  
         console.log (playerArray);
-        return playerArray;
+        checkArrays();
+        
       });
     }
   
   let computerChoice = function () {
+  
     const randomSelection = document.getElementById(Math.floor(Math.random() * 4));
-   gameArray.push(randomSelection);
+   gameArray.push(randomSelection.id);
     console.log(gameArray);
     randomSelection.style.opacity = "1"; 
     let dim = setTimeout(() => {
         randomSelection.style.opacity = ".3";
       }, 1000); 
-      return gameArray;
+      
     }
 
 
 
-let computerPlay = function () {
+/*let computerPlay = function () {
+ 
     let run = setInterval(computerChoice, 2000);
   
   let clear =  setTimeout (() => {
     clearInterval(run)}, defaultTime);
     
-  }
+  } */
 
-  start.addEventListener('click',computerPlay);
+  let checkArrays = function () {
+
+    if (JSON.stringify(gameArray) === JSON.stringify(playerArray)) {
+        console.log('game array is' + gameArray);
+        console.log('player array is' + playerArray);
+        console.log("arrays match");
+        defaultTime += 2000;
+        //playerArray = [];
+        //gameArray = [];
+        //computerPlay();
+        computerChoice();
+        turnCount += 1;
+    } else {
+        console.log("arrays do not match");
+        playerArray = [];
+        gameArray = [];
+        turnCount = 0;
+    }
+}
+
+  start.addEventListener('click',computerChoice);
   
-
-
- if (gameArray === playerArray) {
-  console.log(gameArray);
-  console.log(playerArray);
-    defaultTime += 2000;
-    computerPlay();
-    turnCount +=1;
-  } 
 

@@ -29,18 +29,21 @@
   background-color: rgb(2, 249, 2);
   border-top-left-radius: 100%;
   opacity: .3;
+  border: solid 3px black;
 }
 
 .red {
   background-color: rgba(255, 0, 0);
   opacity: .3;
   border-top-right-radius: 100%;
+  border: solid 3px black;
 }
 
 .blue {
   background-color: rgba(0, 0, 255);
   border-bottom-left-radius: 100%;
   opacity: .3;
+  border: solid 3px black;
 
 }
 
@@ -48,6 +51,7 @@
   background-color: rgba(252, 252, 7);
   border-bottom-right-radius: 100%;
   opacity: .3;
+  border: solid 3px black;
 }
 
 .black-dot {
@@ -98,4 +102,12 @@ button{
  font-size: 20px;
  border: 3px solid black
 
+}
+
+.activated {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
 }

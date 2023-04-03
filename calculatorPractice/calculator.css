@@ -1,0 +1,82 @@
+
+*{
+    font-size: 0;
+    color:white;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+
+}
+
+
+#display{
+    display: inline-block;
+    height: 130px;
+    width: 408px;
+    font-size: 58px;
+    background-color: rgb(44, 43, 43);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#answer{
+    font-size: 60px;
+    position:relative;
+    float:right;
+    margin-right: 1%;
+    margin-bottom: 4%;    
+}
+
+.box{
+   display: inline-block;
+   height: 70px;
+   width: 100px;
+   border: 1px solid black;
+   font-size: 30px;
+   color:white;
+   text-align: center;
+   padding-top:30px;
+   
+}
+
+
+
+
+.fat-box{
+    display: inline-block;
+    font-size: 20px;
+    height:70px;
+    width: 202px;
+    border: 1px solid black;
+    border-bottom-left-radius: 15px;
+    font-size: 30px;
+    text-align: center; 
+    padding-top: 30px;
+}
+
+
+#equals{
+   border-bottom-right-radius: 15px; 
+}
+
+.grey{
+    background-color: grey;
+}
+
+.grey:active{
+    background-color: rgb(193, 191, 191);
+}
+
+.dark-grey{
+    background-color: rgb(80, 78, 78);
+}
+
+.dark-grey:active{
+  background-color:grey;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.orange:active{
+    background-color: rgb(152, 100, 4);
+}
