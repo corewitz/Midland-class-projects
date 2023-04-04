@@ -59,3 +59,5 @@ equals.addEventListener("click", (e) => {
     memory= [calculation];
 })
 
+
+console.log("YEAH")
