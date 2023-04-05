@@ -60,4 +60,3 @@ equals.addEventListener("click", (e) => {
 })
 
 
-console.log("YEAH")
