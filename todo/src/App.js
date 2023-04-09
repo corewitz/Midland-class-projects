@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+//import './App.css';
 import React, { useState } from 'react';
-
+/*
 export function App() {
   return (
     <div className="App">
@@ -22,7 +22,7 @@ export function App() {
     </div>
   );
 }
-
+*/
 export function Login () {
 
   let username = "";
@@ -88,23 +88,40 @@ export function TaskDisplay () {
   const addTodo = () => {
     let newTodo = document.getElementById("newTodo").value;
     setTodos((curr) => [...curr, newTodo]); // You might also see this as setTodos((curr) => [...curr, newTodo]); where curr is just the current value of state
-    console.log(currentState);
-  };
+    //console.log(newTodo);
+    //console.log(currentState);
+    document.getElementById("newTodo").value = ""; // Set the input value to an empty string
+  }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    }
+  console.log(currentState)
 
+  const handleDelete = (index) => {
+    setTodos((prevState) => {
+      const updatedTodos = [...prevState];
+      updatedTodos.splice(index, 1);
+      return updatedTodos;
+    });
+  };
   return (
     <div>
      <ul>
-      {currentState.map((toDo) => (
-        <li key={toDo}>{toDo}</li>  
+      {currentState.map((toDo, index) => (
+        <div className = "toDoRow" key ={index}>
+          <li key={toDo}>{toDo}</li>
+          <button onClick={() => handleDelete(index)}>DONE</button>
+        </div>
       ))}
      </ul>
-     <form>
+     <form onSubmit={handleSubmit}>
       <label htmlFor="newTodo">New to do?:</label>
       <input type="text" id="newTodo" name="newTodo"></input>
       <input htmlFor="newTodo" type="button" value="Add To Do" onClick={addTodo}></input>
      </form>
     </div>
   );
+
 };
 //export default Todo;
 
