@@ -1,9 +1,5 @@
-
 import React, { useState } from 'react';
 import Button from './styled/button'
-
-
-
 
 export function Login () {
   const [title, setTitle] = useState("");
@@ -49,7 +45,4 @@ export function Login () {
     </div>
   )
 }
- let setIsLoggedIn = false;
-export const handleLogin = () => {
-  setIsLoggedIn(true);
-};
+
