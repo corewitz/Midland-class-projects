@@ -1,5 +1,7 @@
+
 import React, { useState } from 'react';
 import Button from './styled/button'
+import './App.css';
 
 export function Login () {
   const [title, setTitle] = useState("");
@@ -16,14 +18,14 @@ export function Login () {
     console.log(title);
   }
   
-  function handleLogin () {
+function handleLogin () {
     setIsLoggedIn(true);
   }
 
   return (
     <div>
       {!isLoggedIn && (
-        <form>
+        <form className="login">
           <label htmlFor="username">Username:</label>
           <input type="text" id="username" name="username" onChange={(e) => handleUserName(e.target.value)}></input>
           <br></br>
@@ -45,4 +47,3 @@ export function Login () {
     </div>
   )
 }
-
