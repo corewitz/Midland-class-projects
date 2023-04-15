@@ -1,15 +1,14 @@
+
 import './App.css';
 import React from 'react';
-import {TaskDisplay} from './Taskdisplay';
-import {Login} from './Login'
 
+import {Login} from './Login'
 function App () {
   
   return (
     <div>
       <React.StrictMode>
       <Login />
-        <TaskDisplay />
       </React.StrictMode>
     </div>
   );
@@ -17,4 +16,3 @@ function App () {
 
 
 export default App;
-

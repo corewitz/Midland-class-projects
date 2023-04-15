@@ -2,11 +2,12 @@
 import React, { useState } from 'react';
 import Button from './styled/button'
 import './App.css';
-
+import { TaskDisplay } from './Taskdisplay';
 export function Login () {
   const [title, setTitle] = useState("");
   const [username, setUserName] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
 
   const handleUserName = (value) => {
     setUserName(value);
@@ -20,6 +21,8 @@ export function Login () {
   
 function handleLogin () {
     setIsLoggedIn(true);
+
+  
   }
 
   return (
@@ -42,8 +45,10 @@ function handleLogin () {
         <>
         <p>Welcome Back {username}! Lets do some STUFF!</p>
           <p>Title:{title}</p>
+          <TaskDisplay />
         </>
       )}
     </div>
   )
 }
+

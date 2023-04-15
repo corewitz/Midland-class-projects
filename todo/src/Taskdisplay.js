@@ -38,7 +38,7 @@ export function TaskDisplay () {
      <form className="newtodo" onSubmit={handleSubmit}>
       <label htmlFor="newTodo">New to do?:</label>
       <input type="text" id="newTodo" name="newTodo"></input>
-      <Button primary for="newTodo" onClick={addTodo}>Add To Do</Button>
+      <Button primary htmlFor="newTodo" onClick={addTodo}>Add To Do</Button>
      </form>
     </div>
   );
