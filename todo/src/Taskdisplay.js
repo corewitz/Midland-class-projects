@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import Button from './styled/button'
+import Checkybox from './styled/checkbox'
 
 export function TaskDisplay () {
 
@@ -30,7 +31,8 @@ export function TaskDisplay () {
      <ul>
       {currentState.map((toDo, index) => (
         <div className = "toDoRow" key ={index}>
-          <li key={toDo}>{toDo}</li>
+          <li className ="listitem" key={toDo}>{toDo}</li>
+          <Checkybox/>
           <Button onClick={() => handleDelete(index)}>DONE</Button>
         </div>
       ))}

@@ -36,8 +36,8 @@ function handleLogin () {
       )}
       {isLoggedIn && (
         <>
-        <p>Welcome Back {username}! Lets do some STUFF!</p>
-          <p>Title:{title}</p>
+        <p className ="greeting">Welcome Back {username}! Lets do some STUFF!</p>
+          <p className = "greeting">Title: {title}</p>
         </>
       )}
     </div>

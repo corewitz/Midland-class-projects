@@ -12,6 +12,16 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
   justify-content: space-between;
+  align-items: center;
+
+}
+
+.listitem {
+  display: flex; 
+  word-wrap: break-word;
+  font-size: 1.8rem;
+  flex-wrap: wrap;
+  width: 60%;
 }
 
 .login {
@@ -36,8 +46,23 @@ body {
   font-size: 80px
  }
 
+ .newtodo {
+   font-size: 1.5rem;
+   margin-top: 60px;
+ }
+
  .newtodo input {
   margin: 15px;
   margin-right: 60px;
 
+ }
+
+ h2 {
+  font-size: 2rem;
+ }
+
+ .greeting {
+  font-size: 2rem;
+  margin-top: 75px;
+  margin-bottom: 75px;
  }
