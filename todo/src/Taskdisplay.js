@@ -1,8 +1,10 @@
+
 import React, { useState, useEffect } from 'react';
 import Button from './styled/button'
 import Checkybox from './styled/checkbox'
 
 export function TaskDisplay() {
+
   let startingTodos = ["clean litter", "clean house", "get groceries", "get gas"];
   const [currentState, setTodos] = useState(startingTodos);
 
@@ -28,6 +30,8 @@ export function TaskDisplay() {
 
   const handleInputChange = (event) => {
     setInputLength(event.target.value.length);
+    console.log("render");
+    
   }
 
   const handleDelete = (index) => {
@@ -37,6 +41,7 @@ export function TaskDisplay() {
       return updatedTodos;
     });
   };
+
 
   return (
     <div>

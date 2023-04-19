@@ -1,8 +1,10 @@
+
 import React, { useState, useEffect } from 'react';
 
 function Timer () {
-
+ 
     const [counter, setCount] = useState(0);
+    console.log(counter)
     
     useEffect(() => {
         const interval = setInterval(() => {
@@ -22,3 +24,9 @@ function Timer () {
 }
 
 export default Timer;
+
+
+
+
+
+
