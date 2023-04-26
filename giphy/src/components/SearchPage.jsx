@@ -3,59 +3,23 @@ import Button from '../styled/elements/Button';
 import getGifs from '../functions/getGifs';
 import { useQuery } from 'react-query';
 import { useSearchContext } from "../context/SearchContext";
+import {useFavoritesContext} from "../context/FavoritesContext";
+import GifDisplay from "../components/GifDisplay";
 
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [url, setUrl] = useState(null);
   const [rating, setRating] = useState('g');
   const { searchResults, setSearchResults } = useSearchContext();
+  const {favorites, addFavorite, removeFavorite} = useFavoritesContext();
 
 
   const { isLoading, error, isSuccess } = useQuery(["getGifs", url], () => getGifs(url), {
   enabled: !!url, 
 
   onSuccess: (data) => setSearchResults(data),
-
-
 })
 
-if (isLoading) {
-  return "Loading....";
-}
-
-if (error) {
-  return "an error has occured:" + error.message;
-}
- 
-if (isSuccess) { 
-  return console.log(searchResults);
-}
-
-/*
-if (isSuccess) { 
-  return (
-    <div>
-      <h1>Search results:</h1>
-      {searchResults.map((gif) => (
-        <img key={gif.id} src={gif.images.original.url} alt={gif.title} />
-      ))}
-    </div>
-  );
-  
-}
- */ 
-
-/*
-  useEffect(() => {
-    const fetchGifs = async () =>  {
-      if (url) {
-        const gifs = await getGifs(url);
-        console.log(gifs);
-      }
-    };
-    fetchGifs();
-  }, [url]);
-*/
 
   return (
     <div>
@@ -88,6 +52,21 @@ if (isSuccess) {
         Search
         </Button>
       </form>
+      {isLoading && <p>Loading....</p>}
+      {error && <p>an error has occured: {error.message}</p>}
+      {isSuccess && 
+      searchResults.map((val) => (
+        <GifDisplay 
+          key={val.gif_id}
+          url={val.url}
+          title={val.title}
+          gif_id={val.gif_id}
+          addFavorite={addFavorite}
+          removeFavorite={removeFavorite}
+        />
+      ))
+       }
+
 
     </div>
   );

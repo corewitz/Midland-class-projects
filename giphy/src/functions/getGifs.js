@@ -8,5 +8,6 @@ export default async function getGifs(searchString) {
     return gifs.map((val) => ({
         gif_id: val.id,
         title: val.title,
+        url: val.images.original.url
     }))
 }
