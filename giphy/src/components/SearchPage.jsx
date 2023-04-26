@@ -27,8 +27,23 @@ if (error) {
   return "an error has occured:" + error.message;
 }
  
-if (isSuccess) return console.log(searchResults);
- 
+if (isSuccess) { 
+  return console.log(searchResults);
+}
+
+/*
+if (isSuccess) { 
+  return (
+    <div>
+      <h1>Search results:</h1>
+      {searchResults.map((gif) => (
+        <img key={gif.id} src={gif.images.original.url} alt={gif.title} />
+      ))}
+    </div>
+  );
+  
+}
+ */ 
 
 /*
   useEffect(() => {
@@ -41,6 +56,7 @@ if (isSuccess) return console.log(searchResults);
     fetchGifs();
   }, [url]);
 */
+
   return (
     <div>
       <h1>Search</h1>
@@ -72,6 +88,7 @@ if (isSuccess) return console.log(searchResults);
         Search
         </Button>
       </form>
+
     </div>
   );
 };
