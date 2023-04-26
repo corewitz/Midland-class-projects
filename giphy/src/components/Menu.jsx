@@ -2,25 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Menu = () => {
-    return (
-      <nav>
+  return (
+    <nav>
         <ul>
             <li>
-                <Link to="/home">Home</Link>
-            </li>
-
-            <li>
-                <Link to="/">Login</Link>
+            <Link to="/login">Login</Link>
             </li>
             <li>
-                <Link to="/favorites">Favorites</Link>
+            <Link to="/favorites">Favorites</Link>
             </li>
             <li>
-                <Link to="/search">Search</Link>
+            <Link to="/search">Search</Link>
             </li>
         </ul>
-      </nav>
-    )
-}
+    </nav>
+  )
+};
 
 export default Menu;
