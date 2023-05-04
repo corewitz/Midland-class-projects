@@ -58,11 +58,13 @@ const SearchPage = () => {
       searchResults.map((val) => (
         <GifDisplay 
           key={val.gif_id}
-          url={val.url}
-          title={val.title}
-          gif_id={val.gif_id}
-          addFavorite={addFavorite}
+          {...val}
+          //url={val.url}
+          //title={val.title}
+          //gif_id={val.gif_id}
+          addFavorite={() => addFavorite({ gif_id: val.gif_id, url: val.url, title: val.title })}
           removeFavorite={removeFavorite}
+          isFavorite={favorites.some((fav) => fav.gif_id === val.gif_id)}
         />
       ))
        }
