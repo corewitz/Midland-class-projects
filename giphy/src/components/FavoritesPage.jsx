@@ -1,14 +1,15 @@
 import React from 'react';
 import GifDisplay from "./GifDisplay";
 import { useFavoritesContext } from "../context/FavoritesContext";
+import H1 from '../styled/elements/H1.js';
 
 const FavoritesPage = () => {
   
   const {favorites, removeFavorite} = useFavoritesContext();
 
   return (
-    <div>
-      <h1>Favorites</h1>
+    <div className ="center">
+      <H1>Favorites</H1>
       {favorites?.map((value) => {
         return (
           <GifDisplay

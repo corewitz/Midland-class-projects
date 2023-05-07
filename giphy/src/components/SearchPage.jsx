@@ -5,6 +5,7 @@ import { useQuery } from 'react-query';
 import { useSearchContext } from "../context/SearchContext";
 import {useFavoritesContext} from "../context/FavoritesContext";
 import GifDisplay from "../components/GifDisplay";
+import H1 from '../styled/elements/H1.js';
 
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -22,9 +23,10 @@ const SearchPage = () => {
 
 
   return (
-    <div>
-      <h1>Search</h1>
-      <form>
+    <div className ="center top100">
+      <H1>Search</H1>
+      <div className="height25"></div>
+      <form className="bottom100">
         <input
           placeholder='Search for a gif'
           type='text'
@@ -32,6 +34,7 @@ const SearchPage = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <select
+          className ="margin"
           value={rating}
           onChange={(e) => setRating(e.target.value)}
         >
@@ -40,6 +43,8 @@ const SearchPage = () => {
           <option value='pg-13'>PG-13</option>
           <option value='r'>R</option>
         </select>
+        <br></br>
+        <div className="height25"></div>
         <Button
           disabled={searchTerm.length < 3}
           onClick={(e) => {

@@ -1,38 +1,83 @@
-.App {
+.background {
+  /*background: rgb(131,58,180); */
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+min-height: 1000px;
+}
+
+.center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.margin {
+  margin: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top100{
+  margin-top: 100px;
 }
+
+.loginForm {
+  margin-top: 100px;
+}
+
+.height25 {
+  height: 25px;
+}
+
+.height100 {
+  height: 100px;
+}
+
+.bottom100 {
+  margin-bottom: 100px;
+}
+
+.addButton {
+	background-color:#44c767;
+	border-radius:22px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:10px 22px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.addButton:hover {
+	background-color:#5cbf2a;
+}
+.addButton:active {
+	position:relative;
+	top:1px;
+}
+
+.removeButton {
+    background-color:#f50e0e;
+    border-radius:22px;
+    border:1px solid #ab192d;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    padding:10px 22px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #fa0318;
+  }
+
+  .removeButton:hover {
+    background-color:#ff4400;
+  }
+  .removeButton:active {
+    position:relative;
+    top:1px;
+  }
+  
+
