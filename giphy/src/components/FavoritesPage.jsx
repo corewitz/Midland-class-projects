@@ -8,7 +8,7 @@ const FavoritesPage = () => {
   const {favorites, removeFavorite} = useFavoritesContext();
 
   return (
-    <div className ="center">
+    <div className ="center top100">
       <H1>Favorites</H1>
       {favorites?.map((value) => {
         return (
