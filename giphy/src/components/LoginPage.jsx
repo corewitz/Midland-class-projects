@@ -30,7 +30,7 @@ const LoginPage = () => {
         />
         <br/>
         <div className = "height100"></div>
-        <Button
+        <Button data-testid="button"
           className="margin"
           disabled={username.length < 4 || password.length < 4}
           onClick={(e) => {
